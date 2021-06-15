@@ -18,8 +18,9 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     Spacer(modifier = Modifier.padding(top = 10.dp))
 
                     Button(
-                        onClick = {  },
+                        onClick = { },
                         modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
                     ) {
                         Text(text = "Order Now")
