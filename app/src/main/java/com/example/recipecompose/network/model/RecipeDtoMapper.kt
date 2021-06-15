@@ -35,4 +35,11 @@ class RecipeDtoMapper : DomainMapper<RecipeDto, Recipe> {
             dateUpdated = domainModel.dateUpdated
         )
     }
+    fun toDomainList(initial: List<RecipeDto>): List<Recipe>{
+        return initial.map { mapToDomainModel(it) }
+    }
+
+    fun fromDomainList(initial: List<Recipe>): List<RecipeDto>{
+        return initial.map { mapFromDomainModel(it) }
+    }
 }
