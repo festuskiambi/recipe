@@ -1,4 +1,4 @@
-package com.example.recipecompose
+package com.example.recipecompose.presentation
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -18,6 +18,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.recipecompose.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

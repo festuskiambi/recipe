@@ -1,4 +1,4 @@
-package com.example.recipecompose
+package com.example.recipecompose.presentation
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

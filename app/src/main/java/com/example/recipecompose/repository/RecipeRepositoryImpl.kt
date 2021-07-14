@@ -1,4 +1,4 @@
-package com.example.recipecompose.network.repository
+package com.example.recipecompose.repository
 
 import com.example.recipecompose.domain.model.Recipe
 import com.example.recipecompose.network.RecipeService
