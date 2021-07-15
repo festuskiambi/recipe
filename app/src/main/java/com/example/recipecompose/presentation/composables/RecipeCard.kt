@@ -14,6 +14,8 @@ import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.unit.dp
 import com.example.recipecompose.R
 import com.example.recipecompose.domain.model.Recipe
+//import com.example.recipecompose.util.DEFAULT_RECIPE_IMAGE
+//import com.example.recipecompose.util.loadPicture
 
 @Composable
 fun RecipeCard(
@@ -32,6 +34,10 @@ fun RecipeCard(
     ) {
         Column() {
             recipe.featuredImage?.let { url ->
+//                val image =loadPicture(url = url, defaultImage = DEFAULT_RECIPE_IMAGE).value
+
+
+
                 Image(
                     bitmap = ImageBitmap.imageResource(id = R.drawable.empty_plate),
                     contentDescription = "Localized description",
