@@ -25,59 +25,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            Column(
-                modifier = Modifier
-                    .background(color = Color(0xFFF2F2F2))
-                    .fillMaxSize()
-                    .verticalScroll(rememberScrollState())
+        setContentView(R.layout.activity_main)
 
-
-            ) {
-                Image(
-                    bitmap = ImageBitmap
-                        .imageResource(
-                            id = R.drawable.happy_meal
-                        ),
-                    modifier = Modifier.height(300.dp),
-                    contentScale = ContentScale.Crop,
-                    contentDescription = "Localized description"
-
-                )
-
-                Column(modifier = Modifier.padding(16.dp)) {
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween
-                    ) {
-                        Text(
-                            text = "Happy Meal",
-                            fontSize = 26.sp
-                        )
-                        Text(
-                            text = "Kes 1000",
-                            fontSize = 16.sp,
-                            color = Color.Green,
-                            modifier = Modifier.align(alignment = Alignment.CenterVertically)
-                        )
-                    }
-
-                    Spacer(modifier = Modifier.padding(top = 10.dp))
-                    Text(
-                        text = "800 Calories",
-                        fontSize = 17.sp
-                    )
-                    Spacer(modifier = Modifier.padding(top = 10.dp))
-
-                    Button(
-                        onClick = { },
-                        modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
-                    ) {
-                        Text(text = "Order Now")
-                    }
-
-                }
-            }
-        }
     }
 }
