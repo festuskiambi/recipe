@@ -22,7 +22,7 @@ constructor(
     val query: MutableState<String> = mutableStateOf("Chicken")
 
     init {
-        newSearch("chicken")
+        newSearch("")
     }
 
    fun newSearch(query: String) {
