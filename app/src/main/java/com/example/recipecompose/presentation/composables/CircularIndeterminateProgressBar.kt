@@ -24,21 +24,21 @@ fun CircularIndeterminateProgressBar(isDisplayed: Boolean, verticalBias: Float){
 
         }
 
-//        ConstraintLayout(
-//            modifier = Modifier.fillMaxSize(),
-//        ){
-//            val (progressBar) = createRefs()
-//            val topBias = createGuidelineFromTop(verticalBias)
-//            CircularProgressIndicator(
-//                modifier = Modifier
-//                    .constrainAs(progressBar) {
-//                        top.linkTo(topBias)
-//                        end.linkTo(parent.end)
-//                        start.linkTo(parent.start)
-//                    },
-//                color = MaterialTheme.colors.primary
-//            )
-//        }
+        ConstraintLayout(
+            modifier = Modifier.fillMaxSize(),
+        ){
+            val (progressBar) = createRefs()
+            val topBias = createGuidelineFromTop(verticalBias)
+            CircularProgressIndicator(
+                modifier = Modifier
+                    .constrainAs(progressBar) {
+                        top.linkTo(topBias)
+                        end.linkTo(parent.end)
+                        start.linkTo(parent.start)
+                    },
+                color = MaterialTheme.colors.primary
+            )
+        }
 
     }
 }
